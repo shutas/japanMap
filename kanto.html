@@ -1,0 +1,48 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Japan Map Prototype</title>
+    <meta name="description" content="Interactive Japan map for tourists">
+    <link rel="canonical" href="https://example.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    body { 
+	  line-height: 1.4;
+	  font-size: 16px;
+	  padding: 0 10px;
+	  margin: 50px auto;
+	  max-width: 800px;
+	}
+	#maincontent
+	{
+	max-width: 48em;
+    margin: 15 auto;
+	}
+    .kanto{ 
+      position: relative; 
+      z-index: 1; 
+      top: 0; 
+      left: 0; 
+    } 
+    .tokyo{ 
+      position: absolute; 
+      z-index: 2; 
+      top: 655; 
+      left: 690; 
+      filter: opacity(0.5) drop-shadow(0 0 0 blue);
+    } 
+</style>	
+</head>
+
+
+<body>
+<div id="maincontent" style="margin-top:70px">
+  <h2>Kanto Region Map</h2>
+  <p>Back to <a href="./index.html">Japan map</a></p><br>
+  <img src="./assets/kanto.png" height="100%" width="100%" class="kanto">  
+  <a href="./tokyo.html">
+  <img src="./assets/tokyo.png" height="12.2%" width="12.5%" class="tokyo"> 
+  </a>
+</div>
+</body>
+</html>

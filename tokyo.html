@@ -1,0 +1,70 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Japan Map Prototype</title>
+    <meta name="description" content="Interactive Japan map for tourists">
+    <link rel="canonical" href="https://example.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    body { 
+	  line-height: 1.4;
+	  font-size: 16px;
+	  padding: 0 10px;
+	  margin: 50px auto;
+	  max-width: 800px;
+	}
+	#maincontent
+	{
+	max-width: 48em;
+    margin: 15 auto;
+	}
+    .tokyo{ 
+      position: relative; 
+      z-index: 1; 
+      top: 0; 
+      left: 0; 
+    } 
+    .tokyo-tower{ 
+      position: absolute; 
+      z-index: 2; 
+      top: 390; 
+      left: 1070; 
+      background: transparent;
+    } 
+    .tokyo-skytree{ 
+      position: absolute; 
+      z-index: 2; 
+      top: 300; 
+      left: 1120; 
+      background: transparent;
+    } 
+</style>	
+</head>
+
+
+<body>
+<div id="maincontent" style="margin-top:70px">
+  <h2>Tokyo Prefecture Map</h2>
+  <p>Back to <a href="./kanto.html">Kanto region map</a></p><br>
+  <img src="./assets/tokyo.png" height="50%" width="100%" class="tokyo"> 
+  <img src="./assets/tokyo-skytree.png" height="8%" width="4.5%" class="tokyo-skytree"> 
+  <img src="./assets/tokyo-tower.png" height="8%" width="2%" class="tokyo-tower">
+  <br>
+  <table border="1">
+    <caption>Sightseeing Spots by Ranking</caption>
+    <tr>
+      <th>Ranking</th>
+      <th>Sightseeing Spots</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Tokyo SkyTree</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Tokyo Tower</td>
+    </tr>
+  </table>  
+</div>
+</body>
+</html>
